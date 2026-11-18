@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORANOS MAHDI AI - PRO MASTER</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #07070f;
+            color: #ffffff;
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 480px;
+            background: #111122;
+            border-radius: 18px;
+            padding: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+            border: 1px solid #333359;
+            margin-bottom: 75px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #2a2a48;
+            padding-bottom: 10px;
+        }
+        .header h1 {
+            font-size: 19px;
+            color: #ffd700;
+            margin-top: 4px;
+            text-shadow: 0 2px 4px rgba(255,215,0,0.3);
+        }
+        .header p {
+            font-size: 11px;
+            color: #a0a0c0;
+        }
+        .eagle-container {
+            position: relative;
+            width: 100%;
+            margin-bottom: 12px;
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid #ffd700;
+        }
+        .eagle-img {
+            width: 100%;
+            max-height: 170px;
+            object-fit: cover;
+            display: block;
+        }
+        .eagle-badge {
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+            background: rgba(11, 11, 20, 0.85);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 10px;
+            color: #00ffcc;
+            border: 1px solid #00ffcc;
+        }
+        .section-box {
+            background: #181830;
+            border-radius: 14px;
+            padding: 12px;
+            margin-bottom: 12px;
+            border: 1px solid #2d2d55;
+        }
+        .section-title {
+            font-size: 13px;
+            color: #ffd700;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: bold;
+        }
+        .agents-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 6px;
+            margin-bottom: 8px;
+        }
+        .agent-card {
+            background: #212142;
+            border-radius: 10px;
+            padding: 8px;
+            border: 1px solid #3c3c75;
+            font-size: 11px;
+        }
+        .agent-card span {
+            display: block;
+            color: #00ffcc;
+            font-size: 10px;
+            margin-bottom: 2px;
+        }
+        .btn-pay {
+            display: block;
+            width: 100%;
+            background: linear-gradient(135deg, #f0a500, #ffcc00);
+            color: #07070f;
+            font-weight: bold;
+            text-align: center;
+            padding: 11px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 13px;
+            margin-top: 8px;
+            box-shadow: 0 4px 15px rgba(240, 165, 0, 0.35);
+        }
+        .input-box {
+            width: 100%;
+            background: #07070f;
+            border: 1px solid #3c3c75;
+            border-radius: 10px;
+            padding: 10px;
+            color: white;
+            font-size: 12px;
+            margin-top: 6px;
+        }
+        .footer-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #111122;
+            border-top: 1px solid #2a2a48;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            z-index: 100;
+        }
+        .nav-item {
+            text-align: center;
+            color: #a0a0c0;
+            font-size: 11px;
+            text-decoration: none;
+        }
+        .nav-item.active {
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <span style="font-size: 10px; color: #00ffcc; font-weight: bold;">● ORANOS MAHDI AI - ULTRA PRO</span>
+            <h1>المستشار الاستراتيجي والعباقرة</h1>
+            <p>أورانوس مهدي | النسخة العظمى المتطورة</p>
+        </div>
+
+        <!-- صورة النسر والشعار الفخم -->
+        <div class="eagle-container">
+            <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=600&auto=format&fit=crop&q=80" alt="Oranos Eagle" class="eagle-img">
+            <div class="eagle-badge">⚡ طاقة قصوى مفعلة</div>
+        </div>
+
+        <!-- منظومة الوكلاء والعباقرة والمهندسين -->
+        <div class="section-box">
+            <div class="section-title">
+                <span>🧠 فيلق العباقرة والمهندسين (24 وكيل)</span>
+            </div>
+            <div class="agents-grid">
+                <div class="agent-card">
+                    <span>مهندس البرمجيات</span>
+                    كود نظيف وآمن وخالي من الأخطاء.
+                </div>
+                <div class="agent-card">
+                    <span>مهندس الذكاء الاصطناعي</span>
+                    توجيه الروابط وتوليد النماذج بدقة.
+                </div>
+                <div class="agent-card">
+                    <span>عبقري التجارة والإعلانات</span>
+                    خطط أمازون وعلي إكسبريس وأدس.
+                </div>
+                <div class="agent-card">
+                    <span>مخترع استراتيجيات الدخل</span>
+                    أتمتة الأرباح واستلام Payoneer.
+                </div>
+            </div>
+            <p style="font-size: 10px; color: #a0a0c0; text-align: center; margin-top: 6px;">تنسيق تلقائي فوري بين جميع الوكلاء لإنجاز مهامك باحترافية.</p>
+        </div>
+
+        <!-- قسم الدفع والمنصة العالمية Payoneer -->
+        <div class="section-box" style="border-color: #f0a500;">
+            <div class="section-title">
+                <span>💳 Payoneer + المنصة العالمية</span>
+                <span style="font-size: 12px; color: #f0a500;">$9.99</span>
+            </div>
+            <p style="font-size: 10px; color: #d0d0f0; margin-bottom: 6px;">تم تفعيل الاستلام المباشر وإيقاف القنوات القديمة.</p>
+            <div style="background: #111122; padding: 7px; border-radius: 6px; font-size: 10px; color: #00ffcc; text-align: center; margin-bottom: 8px;">
+                جاهز للربط الفوري مع Global Checkout URL
+            </div>
+            <a href="#" class="btn-pay">🔗 الانتقال للمنصة العالمية (9.99$)</a>
+        </div>
+
+        <!-- صندوق التوجيه الذكي -->
+        <div class="section-box">
+            <div class="section-title"><span>💡 التوجيه الذكي المباشر</span></div>
+            <input type="text" class="input-box" placeholder="اكتب الهدف أو المشروع هنا ليختار الوكيل المناسب ويجيبك...">
+        </div>
+    </div>
+
+    <!-- القائمة السفلية -->
+    <div class="footer-nav">
+        <a href="#" class="nav-item">💬 المحادثات</a>
+        <a href="#" class="nav-item">⭐ المفضلة</a>
+        <a href="#" class="nav-item">📋 المهام</a>
+        <a href="#" class="nav-item active">🏠 الرئيسية</a>
+    </div>
+
+</body>
+</html>
