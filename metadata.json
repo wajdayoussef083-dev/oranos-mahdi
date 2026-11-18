@@ -1,0 +1,6 @@
+{
+  "name": "ORANOS MAHDI AI",
+  "description": "مساعد ذكاء اصطناعي رجالي فائق الذكاء باللغة العربية والدارجة المغربية لأورانوس مهدي، مع أدوات متقدمة للعمل الرقمي والبحث وصناعة المحتوى",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
