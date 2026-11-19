@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090d16">
+<title>الخبير الاقتصادي | ORANOS</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#090d16;color:#f1f5f9;font-family:Arial,sans-serif;padding-bottom:145px}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:#0d1322;border-bottom:1px solid rgba(229,196,119,.2);position:sticky;top:0;z-index:20}
+.brand-row{display:flex;align-items:center;gap:8px}
+.dot{width:8px;height:8px;border-radius:50%;background:#22c55e}
+.brand-title{font-weight:bold;color:#e5c477;font-size:14px}
+.brand-sub{font-size:10px;color:#94a3b8}
+.badge{background:rgba(229,196,119,.12);border:1px solid rgba(229,196,119,.35);color:#f3d58d;padding:4px 9px;border-radius:999px;font-size:11px;font-weight:bold}
+.wrap{max-width:520px;margin:auto;padding:12px}
+.hero{background:linear-gradient(145deg,#1a1f36,#111627 60%,#1c160b);border:1px solid rgba(229,196,119,.45);border-radius:16px;padding:16px;margin-bottom:12px}
+.hero-tag{display:inline-block;background:rgba(229,196,119,.16);color:#f3d58d;border:1px solid rgba(229,196,119,.35);border-radius:999px;padding:3px 10px;font-size:11px;margin-bottom:8px}
+.hero h1{margin:0;color:#fff;font-size:20px}
+.hero .gold{color:#e5c477;font-size:13px;font-weight:bold;margin-top:4px}
+.hero p{margin:8px 0 0;color:#cbd5e1;font-size:12px;line-height:1.6}
+.panel{background:#111827;border:1px solid #243049;border-radius:14px;padding:13px;margin-bottom:12px}
+.panel-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.panel-title{color:#e5c477;font-size:14px;font-weight:bold;margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.chip{background:#182236;border:1px solid #2e3d5c;color:#e2e8f0;padding:6px 10px;border-radius:999px;font-size:11px}
+.chip.active{background:rgba(229,196,119,.18);border-color:#e5c477;color:#f3d58d;font-weight:bold}
+.prompt-card{background:#0c1220;border:1px solid #25324b;border-radius:11px;padding:10px;margin-top:8px;font-size:12px;color:#e2e8f0;cursor:pointer}
+.tab-view{display:none}
+.tab-view.active{display:block}
+label{display:block;font-size:12px;color:#cbd5e1;margin-top:8px}
+input,select{width:100%;padding:10px 12px;margin-top:4px;background:#090e1a;color:#fff;border:1px solid #2c3a57;border-radius:10px;font-size:13px}
+input.ltr{direction:ltr;text-align:left}
+.btn-row{display:flex;gap:8px;margin-top:10px}
+button{border:0;border-radius:10px;padding:10px 12px;font-weight:bold;cursor:pointer;font-size:12px}
+.btn-gold{background:#e5c477;color:#0b101b;flex:1}
+.btn-dark{background:#1e293b;color:#f1f5f9;flex:1}
+.status{font-size:11px;color:#86efac;margin-top:8px}
+.output-box{white-space:pre-wrap;line-height:1.8;font-size:13px;overflow-wrap:anywhere;min-height:100px}
+.hist-item{padding:10px;border-bottom:1px solid #1e293b;cursor:pointer}
+.hist-item:last-child{border-bottom:0}
+.hist-q{font-size:12px;font-weight:bold;color:#f8fafc}
+.hist-d{font-size:10px;color:#94a3b8;margin-top:3px}
+.composer{position:fixed;left:0;right:0;bottom:56px;background:#0d1322;border-top:1px solid #233048;padding:8px 10px;z-index:25}
+.composer-box{max-width:520px;margin:auto;display:flex;align-items:center;gap:6px;background:#131c2e;border:1px solid #2b3a56;border-radius:999px;padding:4px 6px 4px 10px}
+.composer-box input{margin:0;border:0;background:transparent;padding:7px 4px;font-size:13px;flex:1}
+.composer-box input:focus{outline:none}
+.send-btn{width:36px;height:36px;border-radius:50%;background:#e5c477;color:#0b101b;display:flex;align-items:center;justify-content:center;font-size:15px;padding:0;flex-shrink:0}
+.bottom-nav{position:fixed;left:0;right:0;bottom:0;height:56px;background:#0b101b;border-top:1px solid #1e293b;display:grid;grid-template-columns:repeat(4,1fr);z-index:30}
+.nav-item{background:transparent;color:#94a3b8;border-radius:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font-size:10px;padding:4px}
+.nav-item.active{color:#e5c477;background:#131b2e}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="brand-row">
+    <span class="dot"></span>
+    <div>
+      <div class="brand-title">ORANOS ECONOMIC AI</div>
+      <div class="brand-sub">البنية والواجهة · فريق الخبراء</div>
+    </div>
+  </div>
+  <span class="badge" id="engineBadge">AUTO</span>
+</div>
+
+<div class="wrap">
+  <section id="view-home" class="tab-view active">
+    <div class="hero">
+      <div class="hero-tag">✦ البنية والترتيب</div>
+      <h1>الخبير الاقتصادي · ORANOS</h1>
+      <div class="gold">العقل والمهندسون في ملف مستقل</div>
+      <p>اكتب هدفك في الأسفل أو اختر بداية جاهزة ليقوم فريق الخبراء بالتحليل والتخطيط.</p>
+      <div class="status" id="statusText">جاهز لاستقبال المهام</div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head">
+        <h2 class="panel-title">فريق العمل</h2>
+        <span class="brand-sub">4 أدوار</span>
+      </div>
+      <div class="chips">
+        <span class="chip active">العقل المركزي</span>
+        <span class="chip">باحث اقتصادي</span>
+        <span class="chip">مهندس جودة</span>
+        <span class="chip">المدير التنفيذي</span>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head">
+        <h2 class="panel-title">بدايات مقترحة</h2>
+      </div>
+      <div class="prompt-card" onclick="fillPrompt('اقترح أفضل مجال رقمي مربح بالدولار برأس مال منخفض مع خطة عملية من 5 خطوات.')">
+        💡 أفضل مجال رقمي مربح بالدولار برأس مال منخفض
+      </div>
+      <div class="prompt-card" onclick="fillPrompt('قارن بين الأفلييت والمنتجات الرقمية من حيث التكلفة والمخاطر وسرعة البدء.')">
+        📊 مقارنة الأفلييت والمنتجات الرقمية من حيث المخاطر والتكلفة
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head">
+        <h2 class="panel-title">آخر نتيجة</h2>
+        <button class="btn-dark" style="flex:0;padding:6px 10px" onclick="openTab('report')">فتح التقرير</button>
+      </div>
+      <div class="output-box" id="homePreview">في انتظار أول مهمة...</div>
+    </div>
+  </section>
+
+  <section id="view-report" class="tab-view">
+    <div class="panel">
+      <div class="panel-head">
+        <h2 class="panel-title">تقرير الفريق النهائي</h2>
+        <button class="btn-dark" style="flex:0;padding:6px 10px" onclick="clearReport()">مسح</button>
+      </div>
+      <div class="output-box" id="reportOutput">لا يوجد تقرير بعد.</div>
+    </div>
+  </section>
+
+  <section id="view-tasks" class="tab-view">
+    <div class="panel">
+      <div class="panel-head">
+        <h2 class="panel-title">سجل المهام</h2>
+        <button class="btn-dark" style="flex:0;padding:6px 10px" onclick="clearHistory()">مسح السجل</button>
+      </div>
+      <div id="historyList">لا توجد مهام محفوظة بعد.</div>
+    </div>
+  </section>
+
+  <section id="view-settings" class="tab-view">
+    <div class="panel">
+      <h2 class="panel-title">إعدادات المحركات</h2>
+      <label>المحرك الافتراضي</label>
+      <select id="engineSelect" onchange="syncEngineBadge()">
+        <option value="auto">تلقائي (Auto)</option>
+        <option value="gemini">Gemini</option>
+        <option value="groq">Groq</option>
+      </select>
+      <label>Gemini API Key</label>
+      <input id="gkey" class="ltr" type="password" placeholder="Gemini API Key">
+      <label>معرّف نموذج Gemini</label>
+      <input id="gmodel" class="ltr" type="text" placeholder="gemini-2.5-flash">
+      <label>Groq API Key</label>
+      <input id="qkey" class="ltr" type="password" placeholder="Groq API Key">
+      <label>معرّف نموذج Groq</label>
+      <input id="qmodel" class="ltr" type="text" value="llama-3.3-70b-versatile">
+      <div class="btn-row">
+        <button class="btn-gold" onclick="saveConfig()">حفظ الإعدادات</button>
+        <button class="btn-dark" onclick="clearConfig()">مسح المفاتيح</button>
+      </div>
+      <div class="status" id="cfgStatus"></div>
+    </div>
+  </section>
+</div>
+
+<div class="composer">
+  <div class="composer-box">
+    <input id="msgInput" type="text" placeholder="أعطِ الهدف أو المهمة هنا...">
+    <button id="sendBtn" class="send-btn" onclick="runMission()">➤</button>
+  </div>
+</div>
+
+<nav class="bottom-nav">
+  <button class="nav-item active" data-view="home" onclick="openTab('home')"><span>🏠</span><span>الرئيسية</span></button>
+  <button class="nav-item" data-view="report" onclick="openTab('report')"><span>📄</span><span>التقرير</span></button>
+  <button class="nav-item" data-view="tasks" onclick="openTab('tasks')"><span>📋</span><span>المهام</span></button>
+  <button class="nav-item" data-view="settings" onclick="openTab('settings')"><span>⚙️</span><span>الإعدادات</span></button>
+</nav>
+
+<script src="engine.js"></script>
+</body>
+</html>
